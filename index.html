@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Home </title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+	<script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+	
+</head>
+<body>
+
+	<!-- BUTTON TEMPLATE
+	
+	<div> 
+		<button class="button"> 
+			<a href="URL"><img src="http://www.google.com/s2/favicons?domain=URL" style="float:left;padding-right:10px;"></a>
+			<a href="URL">NAME</a> 
+		</button>
+	</div>
+	
+	-->
+	
+	<!-- <div style="padding-top:100px;">
+	</div> -->
+	<div class="searchContainer" style="">
+		<div class="search-row">
+			<input id="search-field" type="text" name="search-field" placeholder="DuckDuckGo" onkeypress="return search(event)" autofocus="autofocus"/>
+				<script type="text/javascript">
+					function search(e) {
+						if (e.keyCode == 13) {
+							var val = $("#search-field").val();
+							window.location = "https://duckduckgo.com/?q=" + val + "&kp=-2&kh=1&kg=p&k5=1&kae=d&k1=-1";
+							return false;
+						}
+					}
+				</script>
+		</div>
+	</div>
+	
+	<div> 
+		<!--
+		<div class="dropdown">
+			<button class="button"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/favicon.ico" style="float:left;padding-right:10px;">Dropdown</button>
+			<div class="dropdown-content">
+				<a class="underline" href="#"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/favicon.ico" style="float:left;padding-right:10px;"> Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</div>-->
+	
+		<button class="button"> 
+			<a href="https://gmail.google.com"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/favicon.ico" style="float:left;padding-right:10px;">Gmail</a> 
+		</button>
+	
+		
+		<button class="button"> 
+			<a href="https://calendar.google.com/"><img src="https://calendar.google.com/googlecalendar/images/favicon_v2014_6.ico" style="float:left;padding-right:10px;width:16px;">Calendar</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://www.youtube.com/"><img src="http://www.google.com/s2/favicons?domain=https://www.youtube.com/" style="float:left;padding-right:10px;">YouTube</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://drive.google.com/"><img src="https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_4.ico" style="float:left;padding-right:10px;width:16px;">Drive</a> 
+		</button>	
+		
+		<button class="button">
+			<a href="https://keep.google.com/"><img src="https://ssl.gstatic.com/keep/keep.ico" style="float:left;padding-right:10px;width:16px;">Keep</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://play.google.com/music/listen?u=0#/albums"><img src="https://play-music.gstatic.com/fe/4b2b8d68e6e41d1c36bdf7b0dcefbda8/favicon_16x16.png" style="float:left;padding-right:10px;">Music</a> 
+		</button>
+		
+	<!--</div>-->
+	
+	<!--<div class="divider"></div> <!-- DIVIDER -->
+	
+	<!--<div>-->
+		<button class="button"> 
+			<a href="https://twitch.tv/directory/following"><img src="http://www.google.com/s2/favicons?domain=https://twitch.tv" style="float:left;padding-right:10px;">Twitch</a> 
+		</button>
+	
+		<button class="button"> 
+			<a href="https://netflix.com"><img src="http://www.google.com/s2/favicons?domain=https://netflix.com" style="float:left;padding-right:10px;">Netflix</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://www.amazon.co.uk/gp/video/watchlist/ref=sv_atv_7"><img src="http://www.google.com/s2/favicons?domain=https://www.amazon.co.uk/gp/video/watchlist/ref=sv_atv_7" style="float:left;padding-right:10px;">Prime Video</a> 
+		</button>
+	
+	<!-- </div>
+	
+	<div class="divider"></div> <!-- DIVIDER -->
+	
+	<!-- <div> -->
+		<button class="button"> 
+			<a href="https://reddit.com"><img src="http://www.google.com/s2/favicons?domain=https://reddit.com" style="float:left;padding-right:10px;">Reddit</a> 
+		</button>
+	<!-- </div>
+	
+	<div class="divider"></div> <!-- DIVIDER -->
+	
+	<!-- <div> -->
+		<button class="button"> 
+			<a href="https://start.duckduckgo.com/"><img src="http://www.google.com/s2/favicons?domain=duckduckgo.com" style="float:left;padding-right:10px;">DuckDuckGo</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://web.telegram.org/"><img src="http://www.google.com/s2/favicons?domain=https://web.telegram.org/" style="float:left;padding-right:10px;">Telegram</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://web.whatsapp.com"><img src="http://www.google.com/s2/favicons?domain=https://web.whatsapp.com" style="float:left;padding-right:10px;">WhatsApp</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://outlook.live.com/owa/"><img src="http://www.google.com/s2/favicons?domain=https://outlook.live.com/owa/" style="float:left;padding-right:10px;">Outlook</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="http://www.bbc.co.uk/news"><img src="http://www.google.com/s2/favicons?domain=http://www.bbc.co.uk/news" style="float:left;padding-right:10px;">BBC News</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://onedrive.live.com"><img src="http://www.google.com/s2/favicons?domain=https://onedrive.live.com" style="float:left;padding-right:10px;">OneDrive</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://www.dropbox.com/"><img src="http://www.google.com/s2/favicons?domain=https://www.dropbox.com/" style="float:left;padding-right:10px;">Dropbox</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://my.1password.com/signin/"><img src="http://www.google.com/s2/favicons?domain=https://my.1password.com/signin/" style="float:left;padding-right:10px;">1Password</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://onedrive.live.com/edit.aspx?resid=366EF82F32FBDB80!11905&cid=366ef82f32fbdb80&app=OneNote"><img src="http://www.google.com/s2/favicons?domain=http://www.onenote.com/" style="float:left;padding-right:10px;">OneNote</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://www.codecademy.com/learn"><img src="http://www.google.com/s2/favicons?domain=https://www.codecademy.com/learn" style="float:left;padding-right:10px;">Codecademy</a> 
+		</button>
+		
+		<button class="button"> 
+			<a href="https://humblebundle.com"><img src="http://www.google.com/s2/favicons?domain=https://humblebundle.com" style="float:left;padding-right:10px;">Humble</a> 
+		</button>
+	
+	</div>
+	
+	<div style="padding:50px;">
+	<div class="heading">Other sites:</div>
+		<button class="button"> 
+			<a href="https://humblebundle.com"><img src="http://www.google.com/s2/favicons?domain=https://humblebundle.com" style="float:left;padding-right:10px;">Humble</a> 
+		</button>
+	</div>
+	
+</body>
+</html>
