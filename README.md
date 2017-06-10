@@ -1,2 +1,2 @@
-# home
-Startpage
+# Home
+A startpage created by izzobot.
