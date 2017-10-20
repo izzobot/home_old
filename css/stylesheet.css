@@ -34,7 +34,7 @@ div.divider {
 	background-color:#201D1E;
 	color:white;
 	text-align:center;
-	font-family:Roboto; 
+	font-family:Open Sans; 
 }
 
 div#topSpacer {
@@ -42,7 +42,7 @@ div#topSpacer {
 }
 
 div#dateDisplay {
-	font-family: Roboto;
+	font-family: Open Sans;
 	font-weight:900;
 	text-transform:uppercase;
 	font-size: 20px;
@@ -52,7 +52,7 @@ div#dateDisplay {
 }
 
 div.heading {
-	font-family:Roboto;
+	font-family:Open Sans;
 	color: rgba(255,255,255,0.2);
 	font-size: 10px;
 	padding-bottom: 5px;
@@ -69,8 +69,8 @@ div.searchContainer {
 button.link {
 	background-color:#2d2d2d; 
 	color:white; 
-	font-family:Roboto; 
-	font-size: 14px;
+	font-family:Open Sans; 
+	font-size: 11px;
 	width:auto;
 	margin:5px;
 	text-align:center;
@@ -106,9 +106,10 @@ button.link#activeBlue:active {
 */
 
 /* SEARCH BOX */
+
 		
-.search-row {
-    width: 300px;
+.searchContainer {
+    width: 100px;
     height: 35px;
     margin: 10px auto 20px auto;
     padding: 0px 20px;
@@ -118,13 +119,13 @@ button.link#activeBlue:active {
     border-radius: 5px;
 }
 
-#search-field {
-    width: 300px;
+#searchBoxInput {
+    width: 100px;
     height: 35px;
-    padding: 0px 10px 0px 0px;
+    /* padding: 0px 10px 0px 0px; */
     background-color: transparent;
-    font-family: "Roboto";
-    font-size: 14px;
+    font-family: "Roboto Mono";
+    font-size: 12px;
     color: #f2f2f2;
     float: left;
     outline: none;
@@ -137,7 +138,7 @@ button.link#activeBlue:active {
 
 }
 
-#search-field:focus {
+#searchBoxInput:focus {
 	content:"";
 	background-color:none;
 	border-bottom: solid 2px #676767;
@@ -147,7 +148,7 @@ button.link#activeBlue:active {
 	
 }
 
-#search-field:focus::-webkit-input-placeholder {
+#searchBoxInput:focus::-webkit-input-placeholder {
 	color:transparent;
 }
 
@@ -318,10 +319,30 @@ a.underline:hover:before {
 }
 */			
 
+/* TABLE */
 
+div.tableContainer {
+	padding-top:40px;
+	background-color:none;
+}
 
+#commandTable {
+	color:white;
+	text-align:left;
+	background-color:none;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:Roboto Mono;
+	font-size:12px;
+}
 
+td.cmd {
+	padding-right:20px;
+}
 
-
+td.space {
+	padding-left:20px;
+	padding-right:20px;
+}
 
 

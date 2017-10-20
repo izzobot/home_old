@@ -5,10 +5,23 @@
 <title> Home </title>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ruda" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
 <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
 </head>
 <body>
+
+<div class="searchContainer">
+	<div id="searchBox">
+        <!-- search -->
+        <input type="text" id="searchBoxInput" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="autofocus" spellcheck="false" placeholder="" onkeypress="searchKeyPress(event)"></input>
+	</div> <!-- end searchbox -->
+</div>
+<script type="text/javascript" src="js/search.js"></script>
+
+
 
 <!-- BUTTON TEMPLATE
 
@@ -190,6 +203,21 @@
 		</button>
 	</div>
 </div>
+
+<!--
+<div class="tableContainer">
+	<table id="commandTable">
+		<tr>
+			<td class="cmd">1p</td>
+			<td>1password</td>
+		</tr>
+		<tr>
+			<td class="cmd">ama</td>
+			<td>amazon</td>
+		</tr>
+	</table>
+</div>
+-->
 	<!--
 	<div style="padding:50px;">
 		<div class="heading">Other sites:</div>
