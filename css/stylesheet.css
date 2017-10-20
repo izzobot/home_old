@@ -13,7 +13,7 @@ body {
 	/* #0C090A */
 }
 		
-div.linkContainer {
+div.linkContainer { /* Contains everything including buttons */
 	width: 100%;
 	margin-left:auto;
 	margin-right:auto;
@@ -21,13 +21,14 @@ div.linkContainer {
 	text-align:center;
 }
 
-div.buttonBox {
-	width:10em;
+div.buttonBox { /* Container for the buttons */
+	width:30em;;
 	display:inline-block;
 	vertical-align:top;
+	background-color:none;
 }
 
-div.divider {
+div.divider { /* Sometimes used */
 	content: "";
 	height:1px;
 	width:50px;
@@ -37,21 +38,11 @@ div.divider {
 	font-family:Open Sans; 
 }
 
-div#topSpacer {
-	padding-top:10px;
+div#topSpacer { 
+	padding-top:17em;
 }
 
-div#dateDisplay {
-	font-family: Open Sans;
-	font-weight:900;
-	text-transform:uppercase;
-	font-size: 20px;
-	padding: 20px;
-	background-color: #6d6d6d;
-	color:#1c1c1c;
-}
-
-div.heading {
+div.heading { /* Titles above icons */
 	font-family:Open Sans;
 	color: rgba(255,255,255,0.2);
 	font-size: 10px;
@@ -59,20 +50,17 @@ div.heading {
 	padding-top: 5px;
 }
 
-div.searchContainer {
-	padding-top: 100px;
-	padding-bottom: 50px;
-}
 
 /*-- BUTTON --*/
 
-button.link {
+button.link { /* Link part of the button, surrounding image icon */
 	background-color:#2d2d2d; 
 	color:white; 
-	font-family:Open Sans; 
+	font-family:Roboto Mono; 
 	font-size: 11px;
-	width:auto;
-	margin:5px;
+	width:30px;
+	height:30px;
+	margin-top:4px;
 	text-align:center;
 	border:none;
 	border-radius:2px;
@@ -81,7 +69,7 @@ button.link {
 	outline:none;
 }
 
-button.link:hover {
+button.link:hover { /* Colour change when hovering over button */
 	background-color:#576984;
 	transition: 0.3s;
 
@@ -108,7 +96,7 @@ button.link#activeBlue:active {
 /* SEARCH BOX */
 
 		
-.searchContainer {
+.searchContainer { /* Div containing the text box */
     width: 100px;
     height: 35px;
     margin: 10px auto 20px auto;
@@ -117,15 +105,17 @@ button.link#activeBlue:active {
     border: solid 0px #272727;
     opacity: 1;
     border-radius: 5px;
+	padding-top: 100px;
+	padding-bottom: 0px;
 }
 
-#searchBoxInput {
+#searchBoxInput { /* Text input box itself */
     width: 100px;
     height: 35px;
     /* padding: 0px 10px 0px 0px; */
     background-color: transparent;
     font-family: "Roboto Mono";
-    font-size: 12px;
+    font-size: 10px;
     color: #f2f2f2;
     float: left;
     outline: none;
@@ -138,162 +128,30 @@ button.link#activeBlue:active {
 
 }
 
-#searchBoxInput:focus {
-	content:"";
+
+#searchBoxInput:focus { /* Underline animation on focus */
+	/*content:"";
 	background-color:none;
-	border-bottom: solid 2px #676767;
+	border-bottom: solid 2px #232323;
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	
+	*/
 }
 
 #searchBoxInput:focus::-webkit-input-placeholder {
 	color:transparent;
 }
 
-/*.search-row {
-    width: 300px;
-    height: 35px;
-    margin: 10px auto 20px auto;
-    padding: 0px 20px;
-    background-color: #272727;
-    border: solid 1px #272727;
-    opacity: 0.9;
-    border-radius: 10px;
-}
-
-#search-field {
-    width: 300px;
-    height: 35px;
-    padding: 0px 10px 0px 0px;
-    background-color: #272727;
-    border: solid 0px #272727;
-    font-family: "Roboto";
-    font-size: 14px;
-    color: #f2f2f2;
-    float: left;
-    outline: none;
-}*/
-
-
-
-/* TEST */
-/*
-div.button {
-	background-color:red; 
-	color:white; 
-	font-family:Roboto; 
-	font-size: 14px;
-	padding: 10px;
-	width:auto;
-	margin:5px;
-	text-align:center;
-	border:none;
-	border-radius:2px;
-	cursor:pointer;
-	transition: 0.5s;
-}
-
-div.button:hover {
-	background-color:#3d3d3d;
-	transition: 0.5s;
-	
-}
-
-div.button:active {
-	background-color:blue;
-	transition:0.1s;
-}
-
-div.button:before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	bottom: 50%;
-	left: 0;
-	background-color: grey;
-	visibility: hidden;
-	transform: scaleX(0);
-	transition: all 0.1s ease-in-out 0s;
-}
-
-div.button:hover:before {
-	visibility: visible;
-	transform: scaleX(1);
-}		
-*/	
-
-/*-- DROPDOWN MENU --*/
-/*
-.dropdown {
-	position: relative;
-	display: inline;
-	padding-top:10px;
-	padding-bottom:10px;
-}
-
-.dropdown-content {
-	background-color:none; 
-	color:white; 
-	padding:0px;
-	text-align:center;
-	border:none;
-	border-radius:2px;
-	cursor:pointer;
-	width:auto;
-	position: absolute;
-	z-index: 1;
-	
-	display: inline;
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s, opacity 0.5s linear, width 0.5s;
-}
-
-.dropdown-content a {
-	background-color:#201D1E; 
-	color:white; 
-	font-family:Roboto; 
-	font-size: 14px;
-	padding: 10px;
-	width:auto;
-	margin:5px;
-	text-align:center;
-	border:none;
-	border-radius:2px;
-	cursor:pointer;
-	transition: 0.5s;
-	display: inline-block;
-}
-
-.dropdown-content a:hover {
-	background-color:#3d3d3d;
-	transition: 0.5s;
-}
-
-.dropdown:hover .dropdown-content {
-	visibility: visible;
-	opacity: 1;
-	position:relative;
-
-} 
-
-.dropdown:hover .button {
-	 
-	    background-color: #3e8e41;
-}*/
-
-a {
+a { /* Hyperlink styles */
 	color:white;
 	text-decoration: none;
 	position: relative;
 	display: block; 	
-	padding: 9px;
+	padding: 0px;
 }
 
-a:visited {
+a:visited { /* Keeping the hyperlinks from turning a new colour when already visited */
 	color:white;
 }
 		
@@ -321,12 +179,12 @@ a.underline:hover:before {
 
 /* TABLE */
 
-div.tableContainer {
+div.tableContainer { /* Div containing the whole table */
 	padding-top:40px;
 	background-color:none;
 }
 
-#commandTable {
+#commandTable { /* Table itself */
 	color:white;
 	text-align:left;
 	background-color:none;
@@ -336,11 +194,11 @@ div.tableContainer {
 	font-size:12px;
 }
 
-td.cmd {
+td.cmd { /* Custom for 'command' cells */
 	padding-right:20px;
 }
 
-td.space {
+td.space { /* Custom format for space cells */
 	padding-left:20px;
 	padding-right:20px;
 }
