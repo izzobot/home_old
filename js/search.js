@@ -136,7 +136,7 @@ function parseCom(com) {
 		}
 		// search twitter for text
 		else if (/^twt s .{1,140}$/i.test(com)) {
-			var query = com.replace(/^twt -s /i, "");
+			var query = com.replace(/^twt s /i, "");
 			nav("https://www.twitter.com/search?q=" + encodeURIComponent(query));
 		}
 		// search twitter for text from user
@@ -148,11 +148,11 @@ function parseCom(com) {
 		}
 		// search twitter for tweets with a hashtag
 		else if (/^twt -sh " + hashtag + "$/i.test(com)) {
-			var tag = com.replace(/^twt -sh #?/i, "");
+			var tag = com.replace(/^twt sh #?/i, "");
 			nav("https://www.twitter.com/search?q=" + encodeURIComponent("#" + tag));
 		}
 		// search twitter for hashtags from user
-		else if (/^twt -sh @?[A-Za-z0-9_]{1,15} " + hashtag + "$/i.test(com)) {
+		else if (/^twt sh @?[A-Za-z0-9_]{1,15} " + hashtag + "$/i.test(com)) {
 			var comparts = com.split(" ");
 			nav("https://www.twitter.com/search?q=" + encodeURIComponent(comparts[3] + " from:" + comparts[2]));
 		}
@@ -226,6 +226,9 @@ function parseCom(com) {
 					break;
 			}
 		}
+		
+		
+		
 		// if the plain old youtube command is matched
 		else if (/^yt$/i.test(com)) {
 			nav("https://www.youtube.com/");
@@ -240,7 +243,26 @@ function parseCom(com) {
 		}
 	}
 
-
+	// handle wowhead command
+	else if (com.startsWith("wow")==true) {
+		// if matches the "wow" command
+		if (/^wow$/i.test(com)) {
+			nav("http://www.wowhead.com");
+		}
+		// search wowhead for text
+		else if (/^wow .{1,140}$/i.test(com)) {
+			var query = com.replace(/^wow /i, "");
+			nav("http://www.wowhead.com/search?q=" + encodeURIComponent(query));
+		}
+		// if anything else, it'll just google it because who cares
+		else if (urlPattern.test(com)){
+			nav(com);
+		}
+		// if all else fails, google it
+		else {
+			search();
+		}
+	}
 
 	// misc commands
 	else if (/^(gm|gmail|mail)$/i.test(com)) {
@@ -328,7 +350,13 @@ function parseCom(com) {
 	else if (/^(steam|st)?$/i.test(com)) {
 		nav("http://store.steampowered.com/");
 	}
+	else if (/^(icyveins|icy|iv)?$/i.test(com)) {
+		nav("https://www.icy-veins.com/wow/class-guides");
+	}
 
+	else if (/^(discord|dis)?$/i.test(com)) {
+		nav("https://discord.gg");
+	}
 
 
 /*	else if (/^SHORTCUT?$/i.test(com)) {
