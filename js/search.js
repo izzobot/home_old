@@ -249,7 +249,7 @@ function parseCom(com) {
 	else if (/^(gd|drive|gdrive)$/i.test(com)) {
 		nav("http://drive.google.com");
 	}
-	else if (/^speedtest$/i.test(com) || /^spd$/i.test(com)) {
+	else if (/^(st|speedtest)$/i.test(com) || /^spd$/i.test(com)) {
 		nav("http://www.speedtest.net");
 	}
 	else if (/^(twitch|tw)$/i.test(com)) {
