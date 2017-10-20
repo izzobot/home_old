@@ -5,7 +5,7 @@ html {
 
 	
 body {
-	background-color:#1c1c1c;
+	background-color:#121212; /* 1c1c1c */
 	height:100%;
 	margin:0;
 	background-repeat: no-repeat;
@@ -54,7 +54,7 @@ div.heading { /* Titles above icons */
 /*-- BUTTON --*/
 
 button.link { /* Link part of the button, surrounding image icon */
-	background-color:#2d2d2d; 
+	background-color:#1c1c1c; /* 2d2d2d */
 	color:white; 
 	font-family:Roboto Mono; 
 	font-size: 11px;
