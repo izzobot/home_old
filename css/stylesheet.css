@@ -97,11 +97,11 @@ button.link#activeBlue:active {
 
 		
 .searchContainer { /* Div containing the text box */
-    width: 100px;
+    width: 300px;
     height: 35px;
     margin: 10px auto 20px auto;
     padding: 0px 20px;
-    background-color: none; /* #1c1c1c; */
+    background-color: #1c1c1c; /* #1c1c1c; */
     border: solid 0px #272727;
     opacity: 1;
     border-radius: 5px;
@@ -110,7 +110,7 @@ button.link#activeBlue:active {
 }
 
 #searchBoxInput { /* Text input box itself */
-    width: 100px;
+    width: 300px;
     height: 35px;
     /* padding: 0px 10px 0px 0px; */
     background-color: transparent;

@@ -357,6 +357,11 @@ function parseCom(com) {
 	else if (/^(discord|dis)?$/i.test(com)) {
 		nav("https://discord.gg");
 	}
+	
+	else if (/^(bandcamp|bc)?$/i.test(com)) {
+		nav("https://bandcamp.com/");
+		document.getElementById("navText").innerHTML = "bandcamp";
+	}
 
 
 /*	else if (/^SHORTCUT?$/i.test(com)) {
