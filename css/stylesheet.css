@@ -101,7 +101,7 @@ button.link#activeBlue:active {
     height: 35px;
     margin: 10px auto 20px auto;
     padding: 0px 20px;
-    background-color: #1c1c1c; /* #1c1c1c; */
+    background-color: none; /* #1c1c1c; */
     border: solid 0px #272727;
     opacity: 1;
     border-radius: 5px;
