@@ -271,8 +271,8 @@ function parseCom(com) {
 	else if (/^(gd|drive|gdrive)$/i.test(com)) {
 		nav("http://drive.google.com");
 	}
-	else if (/^(st|speedtest)$/i.test(com) || /^spd$/i.test(com)) {
-		nav("http://www.speedtest.net");
+	else if (/^(speed|speedtest)$/i.test(com) || /^spd$/i.test(com)) {
+		nav("https://www.backblaze.com/speedtest/");
 	}
 	else if (/^(twitch|tw)$/i.test(com)) {
 		nav("http://www.twitch.tv/following");
@@ -361,6 +361,15 @@ function parseCom(com) {
 	else if (/^(bandcamp|bc)?$/i.test(com)) {
 		nav("https://bandcamp.com/");
 		document.getElementById("navText").innerHTML = "bandcamp";
+	}
+	else if (/^(youtube)$/i.test(com) || /^spd$/i.test(com)) {
+		nav("https://www.youtube.com");
+	}
+	else if (/^(b2|backblaze)$/i.test(com) || /^spd$/i.test(com)) {
+		nav("https://secure.backblaze.com/user_overview.htm");
+	}
+	else if (/^(reddit)$/i.test(com) || /^spd$/i.test(com)) {
+		nav("https://www.reddit.com");
 	}
 
 

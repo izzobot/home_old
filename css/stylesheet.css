@@ -97,7 +97,7 @@ button.link#activeBlue:active {
 
 		
 .searchContainer { /* Div containing the text box */
-    width: 300px;
+    width: 1000px;
     height: 35px;
     margin: 10px auto 20px auto;
     padding: 0px 20px;
@@ -110,12 +110,12 @@ button.link#activeBlue:active {
 }
 
 #searchBoxInput { /* Text input box itself */
-    width: 300px;
+    width: 1000px;
     height: 35px;
     /* padding: 0px 10px 0px 0px; */
     background-color: transparent;
     font-family: "Roboto Mono";
-    font-size: 10px;
+    font-size: 15px;
     color: #f2f2f2;
     float: left;
     outline: none;
